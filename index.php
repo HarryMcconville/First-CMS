@@ -11,9 +11,13 @@ include "includes/navigation.php";
     <div class="container">
 
         <div class="row">
+            
 
             <!-- Blog Entries Column -->
             <div class="col-md-8">
+            <h1 class="page-header">
+                    Harry's CMS
+                </h1>
             <?php 
              $query = "SELECT * FROM posts";
              $select_all_posts_query = mysqli_query($connection, $query);
@@ -31,10 +35,7 @@ include "includes/navigation.php";
 
                  ?>
                 
-                 <h1 class="page-header">
-                    Harry's CMS
-                    <small>Is based</small>
-                </h1>
+                
 
                 <!-- First Blog Post -->
                 <h2>
