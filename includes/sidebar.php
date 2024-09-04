@@ -68,4 +68,3 @@ echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
 
 <!-- Side Widget Well -->
 <?php include "includes/widget.php" ?>
-asd
