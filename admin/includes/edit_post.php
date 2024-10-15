@@ -96,10 +96,29 @@ while($row = mysqli_fetch_assoc($select_categories)){
         <input value="<?php echo $post_author; ?>"  type="text" class="form-control" name="post_author">
     </div>
 
-    <div class="form-group">
+    
+    <select name="post_status" id="">
+
+        <option value="<?php echo $post_status ?>"> <?php echo $post_status; ?></option>
+        <?php
+
+        if($post_status == 'Published'){
+            
+        echo "<option value='draft'>Draft</option>";
+
+        } else{
+
+        echo "<option value='Published'>Published</option>";
+        }
+
+        ?>
+    </select>
+ 
+ 
+    <!-- <div class="form-group">
         <label for="title">Post Status</label>
         <input value="<?php echo $post_status; ?>" type="text" class="form-control" name="post_status">
-    </div>
+    </div> -->
 
     <div class="form-group">
         <label for="title">Post Tags</label>
@@ -116,9 +135,7 @@ while($row = mysqli_fetch_assoc($select_categories)){
 
     <div class="form-group">
         <label for="title">Post Content</label>
-        <textarea class="form-control" name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?>"
-        
-        </textarea>
+        <textarea class="form-control" name="post_content" id="summernote" cols="30" rows="10"><?php echo $post_content; ?>"</textarea>
     </div>
 
     <div class="form-group">

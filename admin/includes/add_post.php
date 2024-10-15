@@ -64,8 +64,15 @@ while($row = mysqli_fetch_assoc($select_categories)){
     </div>
 
     <div class="form-group">
+        
         <label for="title">Post Status</label>
-        <input type="text" class="form-control" name="post_status">
+        <div>
+        <select name="post_status" id="">
+            <option value='draft'>Draft</option>
+            <option value='Published'>Published</option>"
+
+        </select>
+        </div>
     </div>
 
     <div class="form-group">
@@ -80,8 +87,7 @@ while($row = mysqli_fetch_assoc($select_categories)){
 
     <div class="form-group">
         <label for="title">Post Content</label>
-        <textarea class="form-control" name="post_content" id="" cols="30" rows="10"">
-        </textarea>
+        <textarea class="form-control" name="post_content" id="summernote" cols="30" rows="10""></textarea>
     </div>
 
     <div class="form-group">

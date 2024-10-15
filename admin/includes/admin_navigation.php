@@ -73,6 +73,5 @@
             <!-- /.navbar-collapse -->
         </nav>
 <?php 
-print "poopoo"
 
 ?>
